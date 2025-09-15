@@ -1,0 +1,1 @@
+/home/pluem/.config/omarchy/current/theme/neovim.lua
