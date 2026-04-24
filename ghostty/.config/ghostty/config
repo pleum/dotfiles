@@ -11,8 +11,8 @@ unfocused-split-opacity = 0.55
 # Window
 window-theme = ghostty
 window-padding-balance = true
-window-padding-x = 14
-window-padding-y = 14
+window-padding-x = 4
+window-padding-y = 4
 confirm-close-surface=false
 resize-overlay = never
 gtk-toolbar-style = flat
@@ -39,5 +39,4 @@ keybind = alt+left=unbind
 keybind = alt+right=unbind
 keybind = super+enter=unbind
 keybind = alt+backspace=text:\x1b\x7f
-
 
