@@ -16,7 +16,7 @@ FISH_CONFIG="$HOME/.config/fish/config.fish"
 mkdir -p "$(dirname "$FISH_CONFIG")"
 BREW_SHELLENV="/opt/homebrew/bin/brew shellenv | source"
 if ! grep -qxF "$BREW_SHELLENV" "$FISH_CONFIG" 2>/dev/null; then
-  echo "$BREW_SHELLENV" >> "$FISH_CONFIG"
+  echo "$BREW_SHELLENV" >>"$FISH_CONFIG"
 fi
 
 # Install fish via Homebrew
@@ -31,7 +31,7 @@ if ! grep -qxF "$FISH_PATH" /etc/shells; then
 fi
 
 # Install packages
-BREW_PACKAGES=(tmux mise nvim lazygit lazydocker starship zoxide jq gum libyaml)
+BREW_PACKAGES=(tmux mise nvim lazygit lazydocker starship zoxide jq gum libyaml stow)
 for pkg in "${BREW_PACKAGES[@]}"; do
   brew install "$pkg"
 done
