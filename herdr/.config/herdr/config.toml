@@ -1,0 +1,11 @@
+onboarding = false
+
+[ui.sound]
+enabled = false
+
+[ui.toast]
+enabled = true
+
+[theme]
+name = "terminal"
+auto_switch = false

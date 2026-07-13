@@ -1,0 +1,5 @@
+transparent_background = true
+menu_bar = false
+vcs = "git"
+mode = "auto"
+agent_notes = false
